@@ -1,0 +1,53 @@
+#main-head{
+    font-size: 2.5rem;
+    font-family: 'MonteCarlo', cursive;
+    background:linear-gradient( red,yellow);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-right: 40%;
+    
+}
+body{
+    background-color: #111;
+    color: #fff;
+}
+#ul-flex{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around ;
+    & li a{
+        color: white;
+    }
+}
+#nav{
+    box-shadow:0 0 10px white;
+}
+//about section
+#about > div:nth-child(2) {
+    max-height: 90vh;
+
+    & img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        -o-object-fit: cover;
+    } 
+}
+#about > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    h1{
+        font-size: 3rems;
+        text-decoration: underline green .8rem;
+        
+    }
+    & p{
+        padding: 2rem ;
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+}
