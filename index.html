@@ -19,6 +19,8 @@
       href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="container-fluid">
@@ -213,7 +215,56 @@
           </div>
         </div>
       </section>
-     
+      <section id="contact" class=" bg-dark d-flex justify-content-center align-items-center">
+        <form action="" id="form"  class="row  flex-column justify-content-center align-items-center">
+          <div class="name d-flex flex-column m-2">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" class="p-1">
+          </div>
+          <div class="email d-flex flex-column m-2">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="p-1">
+          </div>
+          <div class="message d-flex flex-column m-2">
+            <label for="message">Message</label>
+            <textarea name="message" class="p-1" id="message" cols="30" rows="10"></textarea>
+          </div>
+          <button type="submit" class="w-75 btn btn-primary">submit</button>
+        </form>
+      </section>
+<footer class="page-footer font-small cyan darken-3">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-12 pt-5">
+        <div class="mb-2 d-flex align-items-center justify-content-lg-around w-50 m-auto">
+
+          <a class="fb-ic" href="https://www.facebook.com/najmudheen.kottakuth" target="blank_page">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <a class="tw-ic" href="https://twitter.com/najmudheen10" target="blank_page" >
+            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <a class="li-ic" href="https://www.linkedin.com/in/najmudheen-m-542013213/" target="blank-page">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <a class="ins-ic" href="https://www.instagram.com/najmu_nm" target="blank-page">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+ 
+  <div class="footer-copyright text-center py-3">© 2021 Copyright:
+    <a href="https://najmudheen.com/"> najmudheen.com</a>
+  </div>
+
+</footer>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -226,6 +277,8 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+ 
     <script src="./app.js"></script>
+    
   </body>
 </html>
