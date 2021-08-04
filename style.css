@@ -1,6 +1,10 @@
+#headers {
+  z-index: 1;
+}
+
 #main-head {
   font-size: 2.5rem;
-  font-family: 'MonteCarlo', cursive;
+  font-family: "MonteCarlo", cursive;
   background: -webkit-gradient(linear, left top, left bottom, from(red), to(yellow));
   background: linear-gradient(red, yellow);
   background-clip: text;
@@ -63,13 +67,68 @@ body {
 
 #about > div:nth-child(1) h1 {
   font-size: 3rems;
-  -webkit-text-decoration: underline green .8rem;
-          text-decoration: underline green .8rem;
+  -webkit-text-decoration: underline green 0.8rem;
+          text-decoration: underline green 0.8rem;
+  padding-top: 2rem;
 }
 
 #about > div:nth-child(1) p {
   padding: 2rem;
   font-size: 2rem;
   line-height: 1.2;
+}
+
+.card {
+  margin: 0.5rem;
+}
+
+.card-img-top {
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+
+.card-text {
+  color: black;
+  font-family: "Anton", sans-serif;
+}
+
+.image-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.image-cards img {
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+
+#services .service {
+  margin: 0.2rem;
+  background: #1d1d1d;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#services img {
+  width: 20%;
 }
 /*# sourceMappingURL=style.css.map */

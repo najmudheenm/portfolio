@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create next level</title>
-    <link rel="icon" href="./icon/profile icon.jpg">
+    <link rel="icon" href="./icon/profile icon.jpg" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -22,7 +22,7 @@
   </head>
   <body>
     <div class="container-fluid">
-      <header class="row position-sticky top-0">
+      <header class="row position-sticky top-0 " id="headers">
         <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-dark">
           <div class="container-fluid">
             <a class="navbar-brand" id="main-head" href="#">Najmudheen</a>
@@ -51,7 +51,7 @@
                   <a class="nav-link" href="#skill">Skill</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#service">Service</a>
+                  <a class="nav-link" href="#services">Service</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#contact">Contact</a>
@@ -75,6 +75,145 @@
           <img src="./img/my dp.jpg" alt="" />
         </div>
       </section>
+      <section
+        id="skill "
+        class="
+          bg-dark
+          mb-3
+          mt-2
+          d-flex
+          flex-column
+          justify-content-sm-center
+          align-items-center
+        "
+      >
+        <h1 class="m-3">skills</h1>
+
+        <div class="d-flex flex-wrap justify-content-around">
+          <div
+            class="
+              card
+              mt-3
+              flex-column
+              align-items-center
+              justify-content-center
+            "
+            style="width: 18rem"
+          >
+            <img
+              class="card-img-top"
+              src="./icon/480px-HTML5_logo_and_wordmark.svg.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="
+              card
+              mt-3
+              flex-column
+              align-items-center
+              justify-content-center
+            "
+            style="width: 18rem"
+          >
+            <div class="image-cards">
+              <img
+                src="data:image/png;base64,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"
+                alt=""
+              />
+              <img
+                class="card-img-top"
+                src="https://cdn.iconscout.com/icon/free/png-512/sass-226054.png"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div
+            class="
+              card
+              mt-3
+              flex-column
+              align-items-center
+              justify-content-center
+            "
+            style="width: 18rem"
+          >
+            <img
+              class="card-img-top"
+              src="https://www.drupal.org/files/project-images/bootstrap-stack.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div
+            class="
+              card
+              mt-3
+              flex-column
+              align-items-center
+              justify-content-center
+            "
+            style="width: 18rem"
+          >
+            <img
+              class="card-img-top"
+              src="data:image/jpeg;base64,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"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="p-3 bg-dark">
+        <div
+          class="
+            d-flex
+            flex-column
+            justify-content-sm-center
+            align-items-center
+          "
+        >
+          <h1 class="m-4">Services.</h1>
+          <div class="needinner row flex-row justify-content-sm-around">
+            <div class="service col-12 col-md-6 col-lg-3">
+              <img src="./icon/rocket-312767.svg" alt="" />
+              <h2>Web Design</h2>
+            </div>
+            <div class="service col-12 col-md-6 col-lg-3">
+              <img src="./icon/cloud.png" alt="" />
+              <h2>Development</h2>
+            </div>
+            <div class="service col-12 col-md-6 col-lg-3">
+              <img src="./icon/app.png" alt="" />
+              <h2>Application</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+     
     </div>
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
