@@ -48,18 +48,11 @@ $(document).ready(function (e) {
                 
             }, 
             submitHandler:function(){
-                alert ("success fully")
-            }
-        })
-        
-    })
-    $("#form").submit((e)=>{
-        e.preventDefault()
-        $.ajax({
-            url:"https://script.google.com/macros/s/AKfycbwF_a8MuUKGIDrojcrbYKEkkb4zYomfeM1BnKRCLEwiEN6O6UCn9_78GWAMrgF8ap3Lfg/exec",
-            data:$("#form").serialize(),
-            method:"post",
-            success:function (response){
+                $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbwF_a8MuUKGIDrojcrbYKEkkb4zYomfeM1BnKRCLEwiEN6O6UCn9_78GWAMrgF8ap3Lfg/exec",
+                 data:$("#form").serialize(),
+                method:"post",
+                success:function (response){
                 alert("Form submitted successfully")
                 window.location.reload()
                 //window.location.href="https://google.com"
@@ -67,6 +60,12 @@ $(document).ready(function (e) {
             error:function (err){
                 alert("Something Error")
 
+            } 
+        })
             }
         })
+        
+    })
+    $("#form").submit((e)=>{
+        
     })
