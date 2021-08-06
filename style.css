@@ -66,8 +66,8 @@ body {
 
 #about > div:nth-child(1) h1 {
   font-size: 3rems;
-  -webkit-text-decoration: underline green 0.8rem;
-          text-decoration: underline green 0.8rem;
+  -webkit-text-decoration: underline green .2rem;
+          text-decoration: underline green .2rem;
   padding-top: 2rem;
 }
 
