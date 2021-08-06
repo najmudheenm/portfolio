@@ -37,6 +37,11 @@ $(document).ready(function (e) {
                 message:{
                     minlength:10,
                 },
+                mobile:{
+                    minlength:10,
+                    maxlength:10,
+                    number: true
+                },
                 
                 
             },
@@ -46,7 +51,15 @@ $(document).ready(function (e) {
                 },
                 email:{
                     isEmail:"Email not valid"
-                }
+                },
+                mobile:{
+                    number:"Please enter a valued mobile",
+                    minlength:"Please enter at least 10 digit",
+                    maxlength:"mobile number maximum contain 10 digit",
+                    
+                },
+                
+
                 
                 
             }, 
