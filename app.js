@@ -34,6 +34,9 @@ $(document).ready(function (e) {
                     required:true,
                     isEmail:true
                 },
+                message:{
+                    minlength:10,
+                },
                 
                 
             },
