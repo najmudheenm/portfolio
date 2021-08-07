@@ -1,6 +1,5 @@
 
 $.validator.addMethod("alpha", function(value, element) {
-    console.log(element)
     return this.optional(element) || value == value.match(/^[a-zA-Z\s]+$/);
     // --                                    or leave a space here ^^
 });
@@ -11,7 +10,6 @@ jQuery.validator.addMethod("noSpace", function(value, element) {
 
 //email
 $.validator.addMethod("isEmail", function(value, element) {
-    console.log(element)
     return this.optional(element) || value == value.match(/\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b/i);
    
 });
@@ -53,9 +51,9 @@ $(document).ready(function (e) {
                     isEmail:"Email not valid"
                 },
                 mobile:{
-                    number:"Please enter a valued mobile",
-                    minlength:"Please enter at least 10 digit",
-                    maxlength:"mobile number maximum contain 10 digit",
+                    number:"Please enter a valued mobile number",
+                    minlength:"Please enter a valued mobile number",
+                    maxlength:"Please enter a valued mobile number",
                     
                 },
                 
@@ -80,8 +78,5 @@ $(document).ready(function (e) {
         })
             }
         })
-        
-    })
-    $("#form").submit((e)=>{
         
     })
