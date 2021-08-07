@@ -17,7 +17,23 @@ $.validator.addMethod("isEmail", function(value, element) {
 
 
 $(document).ready(function (e) {
-   
+    $('.nav-item a').click(async ()=>{
+        
+
+        await b();
+        setTimeout(()=>{
+            a();
+        },650)
+        
+    });
+    
+    a=()=>
+    {
+        window.scrollBy(0,-20)
+    }
+     b=()=>{
+        $(".navbar-collapse").collapse('hide');
+    }
 
         $("#form").validate({
             rules:{
