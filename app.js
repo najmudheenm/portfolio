@@ -42,16 +42,18 @@ $(document).ready(function (e) {
                     required:true,
                     minlength:4,
                     alpha: true,
-                    noSpace: true,
+                    noSpace: true
                 },
                 email:{
                     required:true,
                     isEmail:true
                 },
                 message:{
-                    minlength:10,
+		    required:true,
+                    minlength:10
                 },
                 mobile:{
+		    required:true,
                     minlength:10,
                     maxlength:10,
                     number: true
