@@ -73,7 +73,7 @@ body {
 
 #about > div:nth-child(1) p {
   padding: 2rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1.2;
 }
 
@@ -132,5 +132,8 @@ body {
 }
 .card-img-top{
   padding: .5rem;
+}
+#nav > div > button > span{
+  border: 1px solid rgb(126, 231, 226);
 }
 /*# sourceMappingURL=style.css.map */

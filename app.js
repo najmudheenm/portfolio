@@ -23,7 +23,7 @@ $(document).ready(function (e) {
         await b();
         setTimeout(()=>{
             a();
-        },650)
+        },700)
         
     });
     
